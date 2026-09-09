@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eef3fa;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CARD */
+
+.card {
+    width: 950px;
+    min-height: 835px;
+
+    background: white;
+
+    border-radius: 45px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    padding: 65px 70px;
+}
+
+
+/* HEADING */
+
+.Counter h1 {
+    font-size: 70px;
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 15px;
+}
+
+
+/* SMALL TEXT */
+
+.Counter small {
+    display: block;
+
+    font-size: 25px;
+
+    color: #64748b;
+
+    margin-bottom: 45px;
+}
+
+
+/* COUNT BOX */
+
+#count {
+    width: 80%;
+    height: 235px;
+
+    margin: 0 auto 40px;
+
+    background: #edf3fc;
+
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 120px;
+    font-weight: bold;
+
+    color: #111827;
+}
+
+
+/* BUTTON CONTAINER */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* ALL BUTTONS */
+
+.btn {
+    border: none;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* DECREASE */
+
+#decrease {
+    width: 200px;
+    height: 165px;
+
+    background: #ff4d5a;
+
+    color: white;
+
+    font-size: 70px;
+}
+
+
+/* RESET */
+
+#reset {
+    width: 285px;
+    height: 165px;
+
+    background: #edf3fc;
+
+    color: #1e293b;
+
+    font-size: 28px;
+}
+
+
+/* INCREASE */
+
+#increase {
+    width: 200px;
+    height: 165px;
+
+    background: #25c486;
+
+    color: white;
+
+    font-size: 70px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .card {
+        width: 90%;
+        min-height: auto;
+
+        padding: 40px 20px;
+
+        border-radius: 30px;
+    }
+
+    .Counter h1 {
+        font-size: 45px;
+    }
+
+    .Counter small {
+        font-size: 18px;
+    }
+
+    #count {
+        width: 100%;
+        height: 150px;
+
+        font-size: 80px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    #decrease,
+    #increase {
+        width: 80px;
+        height: 80px;
+
+        font-size: 40px;
+
+        border-radius: 20px;
+    }
+
+    #reset {
+        width: 110px;
+        height: 80px;
+
+        font-size: 18px;
+
+        border-radius: 20px;
+    }
+}
